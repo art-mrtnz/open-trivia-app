@@ -1,0 +1,28 @@
+.form {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+  max-width: 420px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.heading {
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.answerOption {
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+.radio {
+  margin-right: 0.5rem;
+}
+
+.error {
+  color: #e53e3e;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,186 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-answer-option {
+  margin-bottom: 1rem;
+}
+
+.quiz-question-text {
+  margin-bottom: 1rem; /* Increase for more space, decrease for less */
+}
+
+.app-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  padding: 2rem 2.5rem;
+  border: 1px solid #e0e0e0;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative; /* Add this line */
+}
+
+/* Responsive padding for small screens */
+@media (max-width: 500px) {
+  .app-container {
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+  }
+}
+
+.qm {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.qm-top-left {
+  top: 8px;
+  left: 8px;
+  width: 48px;
+  height: 48px;
+}
+
+.qm-top-right {
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.qm-bottom-left {
+  bottom: 8px;
+  left: 8px;
+  width: 56px;
+  height: 56px;
+}
+
+.qm-bottom-right {
+  bottom: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+}
+
+/* Inside the border (relative to .app-container) */
+.qm-inside-top-right {
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.qm-inside-bottom-left {
+  bottom: 10px;
+  left: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #e53935; /* Red */
+  transition: width 0.3s;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button-row button {
+  min-width: 100px;
+}
+
+.button-row button,
+.restart-button {
+  min-width: 100px;
+  background: #ff0400;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Unified hover effect for all buttons */
+.button-row button:hover,
+.restart-button:hover,
+.results-button-row button:hover {
+  background: #6c0000;
+}
+
+.results-button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.results-score-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.results-percent {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem; /* Match h2 size if needed */
+  font-weight: normal;
+}
+
+.results-score-header {
+  text-align: center;
+}
+
+.restart-button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.greeting-text {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #4810e5;
+}
+
+.score-green {
+  color: #2e7d32; /* green */
+}
+
+.score-red {
+  color: #d32f2f; /* red */
+}

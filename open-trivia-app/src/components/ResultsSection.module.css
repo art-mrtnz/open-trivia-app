@@ -1,0 +1,45 @@
+.resultsContainer {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.heading {
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.correct {
+  color: #38a169;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: #e53e3e;
+  font-weight: bold;
+}
+
+.button {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #2b6cb0;
+}
